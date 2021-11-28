@@ -24,7 +24,7 @@
         }
 
         .rightcontainer {
-            padding-left: 730px;
+            padding-left: 30%;
             display: flex;
             flex-direction: row;
             justify-content: end;
@@ -35,6 +35,7 @@
 
         body {
             margin: 0;
+            background-color: #16C79A;
         }
 
         a {
@@ -43,7 +44,7 @@
         }
 
         .homeicon {
-
+            width: 200px;
             padding-left: 20px;
             padding-right: 20px;
             padding-top: 6.6px;
@@ -51,23 +52,129 @@
         }
 
         #contact {
+            width: 120px;
             padding: 31px;
-            background-color: #FF0000;
+            background-color: #16C79A;
         }
 
 
-        .navitem {
+        .navitem1 {
+            width: 120px;
+            padding: 31px;
+        }
 
+        .navitem2 {
+            width: 120px;
             padding: 31px;
         }
 
         .homeicon:hover {
-            background-color: #FF0000;
+            background-color: #19D3DA;
+            transition: 0.2s;
         }
 
-        .navitem:hover {
-            background-color: #FF0000;
+        .navitem1:hover {
+            background-color: #B000B9;
+            transition: 0.2s;
+        }
 
+        .navitem2:hover {
+            background-color: #FF0000;
+            transition: 0.2s;
+        }
+
+        input:focus {
+            outline-offset: -2px;
+        }
+
+        .container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+
+            margin-top: -1em;
+            /*set to a negative number 1/2 of your height*/
+            margin-left: -15em;
+            /*set to a negative number 1/2 of your width*/
+
+
+        }
+
+
+
+
+        #submitsearch {
+            border: 1px solid rgb(138, 134, 134);
+            margin-left: -82px;
+            padding: 5px;
+            border-radius: 19px;
+            cursor: pointer;
+            padding-left: 10px;
+            padding-right: 8px;
+            padding-top: 4px;
+
+            display: none;
+            box-shadow: 0 0 1px black;
+            margin-right: 110px;
+        }
+
+        #searchInput {
+            width: 68%;
+
+            border: 1px solid #000;
+            border-radius: 30px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-24.png');
+
+            background-position: 10px 7px;
+            background-repeat: no-repeat;
+            padding: 8px 20px 8px 40px;
+            -webkit-transition: width 0.8s ease-in-out;
+            transition: width 0.8s ease-in-out;
+            outline: none;
+            opacity: 0.9;
+
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: row;
+            background-color: black;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-family: 'Raleway', sans-serif;
+            font-size: medium;
+            bottom: 0;
+            position: fixed;
+            width: 100%;
+        }
+
+        .mail {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .phone {
+            padding-left: 10px;
+            padding-right: 10px;
+            font-weight: lighter;
+        }
+
+        .address {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .address a:hover {
+            color: blue;
+        }
+
+        .mail a:hover {
+            color: blue;
         }
     </style>
 </head>
@@ -83,12 +190,12 @@
                 </div>
             </a>
             <a href="/test">
-                <div class="navitem">
+                <div class="navitem1">
                     Take a Test
                 </div>
             </a>
             <a href="/about">
-                <div class="navitem">
+                <div class="navitem2">
                     About
                 </div>
             </a>
@@ -99,10 +206,47 @@
             </a>
         </div>
         <div class="rightcontainer">
-            <script async src="https://cse.google.com/cse.js?cx=59be510fcb56d9548"></script>
-            <div class="gcse-search"></div>
+            <input type="text" id="searchInput" placeholder="Search..">
+            <div id='submitsearch'>
+                <span>Search</span>
+
+            </div>
         </div>
     </div>
+    <div class="footer">
+        <div class="mail">
+            E-mail:
+            <a href="mailto:healthmeditake@gmail.com">healthmeditake@gmail.com</a>
+        </div>
+        <div class="phone">
+            Phone:
+            <b>+91 83734 87453</b>
+        </div>
+        <div class="address">
+            Address:
+            <a href="https://goo.gl/maps/aDjYv1SttNeypWtV7">Global Acadamy Of Engineering</a>
+        </div>
+
+
+    </div>
+
 </body>
+<script>
+    $("#searchInput").focus(function () {
+
+        $("#searchInput").css({
+            "display": "inline",
+            "width": "40%",
+            "border": "1px solid #40585d",
+            "opacity": "1",
+            "padding": "8px 20px 8px 20px",
+            "background-image": "none",
+            "box-shadow": "0 0 1px black"
+        });
+        $("#submitsearch").css("display", "inline");
+
+        $("#searchInput").prop("placeholder", "");
+    });
+</script>
 
 </html>

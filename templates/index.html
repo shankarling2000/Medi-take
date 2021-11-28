@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <style>
         .navbar {
             display: flex;
@@ -24,7 +26,7 @@
         }
 
         .rightcontainer {
-            padding-left: 730px;
+            padding-left: 30%;
             display: flex;
             flex-direction: row;
             justify-content: end;
@@ -35,6 +37,7 @@
 
         body {
             margin: 0;
+            background-color: #19D3DA;
         }
 
         a {
@@ -46,19 +49,167 @@
 
             padding-left: 20px;
             padding-right: 20px;
-            background-color: #FF0000;
+            background-color: #19D3DA;
             padding-top: 6.8px;
             padding-bottom: 6.8px;
+            width: 200px;
         }
 
-        .navitem {
+        .navitem1 {
 
             padding: 31px;
+            width: 120px;
         }
 
-        .navitem:hover {
-            background-color: #FF0000;
+        .navitem1:hover {
+            background-color: #B000B9;
+            transition: 0.2s;
+        }
 
+        .navitem2 {
+
+            padding: 31px;
+            width: 120px;
+        }
+
+
+        .navitem2:hover {
+            background-color: #FF0000;
+            transition: 0.2s;
+        }
+
+        .navitem3 {
+
+            padding: 31px;
+            width: 120px;
+        }
+
+
+        .navitem3:hover {
+            background-color: #16C79A;
+            transition: 0.2s;
+        }
+
+        input:focus {
+            outline-offset: -2px;
+        }
+
+        .container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+
+            margin-top: -1em;
+            /*set to a negative number 1/2 of your height*/
+            margin-left: -15em;
+            /*set to a negative number 1/2 of your width*/
+
+
+        }
+
+
+
+
+        #submitsearch {
+            border: 1px solid rgb(138, 134, 134);
+            margin-left: -82px;
+            padding: 5px;
+            border-radius: 19px;
+            cursor: pointer;
+            padding-left: 10px;
+            padding-right: 8px;
+            padding-top: 4px;
+
+            display: none;
+            box-shadow: 0 0 1px black;
+            margin-right: 110px;
+        }
+
+        #searchInput {
+            width: 68%;
+
+            border: 1px solid #000;
+            border-radius: 30px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-24.png');
+
+            background-position: 10px 7px;
+            background-repeat: no-repeat;
+            padding: 8px 20px 8px 40px;
+            -webkit-transition: width 0.8s ease-in-out;
+            transition: width 0.8s ease-in-out;
+            outline: none;
+            opacity: 0.9;
+
+        }
+
+
+        .text1 {
+            margin: 40px;
+            font-size: x-large;
+
+        }
+
+        .text1:hover {
+            text-shadow: thistle;
+            text-shadow: rgb(178, 190, 189);
+        }
+
+        .heading {
+            font-size: 90px;
+            justify-content: center;
+            text-align: center;
+            margin-top: 2%;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .heading:hover {
+            font-weight: bolder;
+            text-shadow: black;
+        }
+
+        #vid {
+            justify-content: center;
+            left: 50%;
+            margin-left: 30%;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: row;
+            background-color: black;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-family: 'Raleway', sans-serif;
+            font-size: medium;
+        }
+
+        .mail {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .phone {
+            padding-left: 10px;
+            padding-right: 10px;
+            font-weight: lighter;
+        }
+
+        .address {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .address a:hover {
+            color: blue;
+        }
+
+        .mail a:hover {
+            color: blue;
         }
     </style>
     <title>Medi-Take</title>
@@ -75,31 +226,115 @@
                 </div>
             </a>
             <a href="/test">
-                <div class="navitem">
+                <div class="navitem1">
                     Take a Test
                 </div>
             </a>
             <a href="/about">
-                <div class="navitem">
+                <div class="navitem2">
                     About
                 </div>
             </a>
             <a href="/contact">
-                <div class="navitem">
+                <div class="navitem3">
                     Contact Us
                 </div>
             </a>
         </div>
         <div class="rightcontainer">
-            <script async src="https://cse.google.com/cse.js?cx=59be510fcb56d9548">
-
-            </script>
-            <div class="gcse-search">
+            <input type="text" id="searchInput" placeholder="Search..">
+            <div id='submitsearch'>
+                <span>Search</span>
 
             </div>
         </div>
     </div>
-    <div class="bodynew"></div>
+    <div class="bodynew">
+
+        <h1 class="heading">Mental Health</h1>
+        <p class="text1">Mental health refers to cognitive, behavioral, and emotional well-being. It is all about how
+            people think, feel, and behave. People sometimes use the term “mental health” to mean the absence of a
+            mental disorder.
+            Mental health can affect daily living, relationships, and physical health.
+
+            However, this link also works in the other direction. Factors in people’s lives, interpersonal connections,
+            and physical factors can all contribute to mental health disruptions.
+
+            Looking after mental health can preserve a person’s ability to enjoy life.
+            <br>
+            Doing this involves reaching a
+            balance between life activities, responsibilities, and efforts to achieve psychological resilience.
+
+            Conditions such as stress, depression, and anxiety can all affect mental health and disrupt a person’s
+            routine.
+            <br>
+            Although the term mental health is in common use, many conditions that doctors recognize as psychological
+            disorders have physical roots.
+
+            In this article, we explain what people mean by mental health and mental illness. We also describe the most
+            common types of mental disorders, including their early signs and how to treat them.
+            <br>
+        </p>
+
+        <iframe id="vid" width="560" height="315" src="https://www.youtube.com/embed/oxx564hMBUI"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+        <p class="text1">WHO also estimates that about 7.5 per cent Indians suffer from some mental disorder and
+            predicts that by end of this year roughly 20 per cent of India will suffer from mental illnesses. According
+            to the numbers, 56 million Indians suffer from depression and another 38 million Indians suffer from anxiety
+            disorders
+            <br>
+            Did you know India also accounts for 36.6 per cent of suicides globally, and that suicide has surpassed
+            maternal mortality as the leading cause of death among women and teenage girls aged 15-19 years? Lancet
+            studies suggest that India’s contribution to global suicide deaths increased from 25·3% in 1990 to 36·6% in
+            2016 among women, and from 18·7% to 24·3% among men.
+            <br> As per the National Mental Health Survey 2015-16 ,
+            conducted by the National Institute of Mental Health & Neurosciences (NIMHANS), Bengaluru, under the purview
+            of the Union Ministry of Health and Family Welfare, it was revealed that 9.8 million teenagers in the age
+            group 13-17 years suffer depression and other mental health disorders and are “in need of active
+            intervention”.
+            <br>
+            Whereas, according to a study by the Lancet, suicide deaths ranked first among all causes of
+            death in women aged 15-29 years in 26 of the 31 states, and in women aged 15-39 years in 24 states in the
+            country.
+        </p>
+    </div>
+    <div class="footer">
+        <div class="mail">
+            E-mail:
+            <a href="mailto:healthmeditake@gmail.com">healthmeditake@gmail.com</a>
+        </div>
+        <div class="phone">
+            Phone:
+            <b>+91 83734 87453</b>
+        </div>
+        <div class="address">
+            Address:
+            <a href="https://goo.gl/maps/aDjYv1SttNeypWtV7">Global Acadamy Of Engineering</a>
+        </div>
+
+
+    </div>
+
 </body>
+<script>
+    $("#searchInput").focus(function () {
+
+        $("#searchInput").css({
+            "display": "inline",
+            "width": "40%",
+            "border": "1px solid #40585d",
+            "opacity": "1",
+            "padding": "8px 20px 8px 20px",
+            "background-image": "none",
+            "box-shadow": "0 0 1px black"
+        });
+        $("#submitsearch").css("display", "inline");
+
+        $("#searchInput").prop("placeholder", "");
+    });
+</script>
 
 </html>
