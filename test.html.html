@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action = "" method = "post">
+        {% csrf_token %}
+        {{form }}
+      
+
+    
+        <label for="l_box1"><input type="checkbox" name="display_type[]" value="1">Feeling sad or down</label><br>
+        <label for="d_box2"><input type="checkbox" name="display_type[]" value="2" >Confused thinking or reduced ability to concentrate</label><br>
+        <label for="l_box1"><input type="checkbox" name="display_type[]" value="3">Excessive fears or worries, or extreme feelings of guilt</label><br>
+        <label for="d_box2"><input type="checkbox" name="display_type[]" value="4">Withdrawal from friends and activities</label><br>
+        <label for="l_box1"><input type="checkbox" name="display_type[]" value="5">Significant tiredness, low energy or problems sleeping</label><br>
+        <label for="d_box2"><input type="checkbox" name="display_type[]" value="6">paranoia or hallucinationsparanoia or hallucinations</label><br>
+        <label for="l_box1"><input type="checkbox" name="display_type[]" value="7">Inability to cope with daily problems or stress</label><br>
+        <label for="d_box2"><input type="checkbox" name="display_type[]" value="8">Confused thinking or reduced ability to concentrate</label><br>
+        <label for="l_box1"><input type="checkbox" name="display_type[]" value="9">problem relating to situations and to people</label><br>
+        <label for="d_box2"><input type="checkbox" name="display_type[]" value="10">Problems with alcohol or drug use</label><br>
+        <label for="l_box1"><input type="checkbox" name="display_type[]" value="11">Major changes in eating habits</label><br>
+        <label for="d_box2"><input type="checkbox" name="display_type[]" value="12">Excessive anger, hostility or violence</label><br>
+        <label for="l_box1"><input type="checkbox" name="display_type[]" value="l3">mood shifts</label><br>
+        <label for="d_box2"><input type="checkbox" name="display_type[]" value="14">flashbacks, nightmares ,trauma</label><br>
+  
+    <input type="submit" value=Submit">
+</form>
+    
+</body>
+</html>
